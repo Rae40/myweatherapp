@@ -1,11 +1,11 @@
 
- body {Background-color: #84b1ec;
+     body {Background-color: #84b1ec;
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
-   
+    
       }
      
-     ul{ display: block;
-        list-style-type: none;
+     #toolBar{ display: block;
+        list-style-type: none; 
         text-align: center;
         font-weight: bold;
         padding: 10px;
@@ -14,72 +14,114 @@
         border: 4px 4px solid;
         border-radius: 50px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
-       
+        
       }
- 
+
        a:link {text-decoration: none;
          padding: 5px;
        }
- 
-       li {display: inline;
+
+       #tools {display: inline;
         margin: 0 15px;
        
        }
- 
-       li:hover{ background-color: #4998FF;
+
+       #tools:hover{ background-color: #4998FF;
         margin: 10 0px;
         opacity: 45%;
- 
- 
+
+
        }
- 
+
        .home,.places,.notify, .set{
         color: #000;
-       
+        
        }
- 
+
        #currentLocation{
          background-color: rgb(243, 239, 184);
          font-weight: normal;
  
        }
- 
- 
- 
-       h1{
-        display: block;
+
+
+    #city{
+    color: #000;
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 28px;
+    
+}
+
+#tempToday{
+    display: block;
         margin: 0 auto;
         Padding: 25px;
         border: 4px 4px solid;
         border-radius: 50px;
-        color: #000;
-        font-size: 38px;
         background: #e7edf5;
-       }
-       
- 
-       h1:hover{background-color: rgb(243, 239, 184);
-       
- 
-       }
- 
-       #tempToday{
-        color: rgb(116, 109, 109);
-        font-size: 30px;
-        font-weight: normal;
-      }
- 
-      #todayDate{
-        color: rgb(116, 109, 109);
-        font-size: 30px;
-        font-weight: normal;
-      }
- 
- 
- 
- 
+}
+
+#tempToday:hover{background-color: rgb(243, 239, 184);}
+
+
+li{
+    list-style: none;
+    margin:0;
+    padding:0;
+    color: rgb(135,135,135);
+    font-size: 20px;
+    font-weight: 100;
+    line-height: 19px;
+}
+
+li::first-letter{
+text-transform: capitalize;    
+}
+
+
+
+.overview{
+    margin-bottom: 20px;
+
+}
+
+.weather-temperature img{
+  margin-right: 10px;
+  height: 70px;
+  width: 70px;
+
+
+}
+
+.weather-temperature strong{
+    color: rgb(33,33,33);
+    font-size: 64px;
+    line-height: 1;
+    font-weight: 400;
+
+}
+
+.weather-temperature .units{
+    position: relative;
+    font-size: 16px;
+    top: -34px;
+}
+
+.weather-temperature .active{
+   color: rgb(33,33,33);
+   cursor: default; 
+   text-decoration: none;
+}
+
+.weather-temperature .active:hover{
+     text-decoration: none;
+}
+
+
+
     .col{display: block;
-        list-style-type: none;
+        list-style-type: none; 
         text-align: center;
         font-weight: bold;
         padding: 10px;
@@ -89,25 +131,25 @@
         border: 15px 4px solid;
         border-radius: 10px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
- 
+
     }
- 
+
     .col:hover{background-color: rgb(243, 239, 184);
- 
- 
+
+
     }
- 
+
     .day{font-size: 20px;
-       
- 
+        
+
     }
- 
+
     .temp, .metric{color: rgb(116, 109, 109);
         font-size: 20px;
- 
+
     }
- 
+
     .metric{ opacity: 50%;
- 
- 
+
+
     }
