@@ -24,6 +24,10 @@ function formateDate(timestamp) {
 }
 
 function displayTemperature(response) {
+
+  celsiusLink.classList.add("active");
+  fahrenheitLink.classList.remove("active");
+  
   celsiusTemperature = response.data.main.temp;
 
   let temperatureElement = document.querySelector("#temperature");
@@ -89,8 +93,8 @@ function displayFahrenheitTemperature(event) {
 
 function displayCelsiusTemperature(event) {
   event.preventDefault();
-  celsiusLink.classList.add("active");
-  fahrenheitLink.classList.remove("active");
+  celsiusLink.classList.add("active"); 
+  fahrenheitLink.classList.remove("active"); 
   let temperatureElement = document.querySelector("#temperature");
   temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
