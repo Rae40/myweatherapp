@@ -1,4 +1,5 @@
 
+     
      body {Background-color: #84b1ec;
         font-family: Cerebri Sans, Helvetica, Arial, sans-serif;
     
@@ -43,8 +44,6 @@
          font-weight: normal;
  
        }
-
-    
 
 
     #city{
@@ -120,38 +119,48 @@ text-transform: capitalize;
      text-decoration: none;
 }
 
+#date{
+     opacity: 70%;
+
+}
 
 
-    .col{display: block;
+
+    .col-2{display: block;
         list-style-type: none; 
         text-align: center;
         font-weight: bold;
-        padding: 10px;
+        padding: 45px;
         background: #e7edf5;
         opacity: 95%;
-        margin: 10 0px;
+        margin: 15 0px;
         border: 15px 4px solid;
-        border-radius: 10px;
+        border-radius: 45px;
         box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 
     }
 
-    .col:hover{background-color: rgb(243, 239, 184);
+    .col-2:hover{background-color: rgb(243, 239, 184);
 
 
     }
 
-    .day{font-size: 20px;
-        
+    .weather-forecast{
+    margin-top: 20px;
+    text-align: center;
+    color: #000;
+}
 
-    }
+.weather-forecast-date{
+    font-size: 20px;
+}
 
-    .temp, .metric{color: rgb(116, 109, 109);
-        font-size: 20px;
+.weather-forecast-temperatures{
+  color: rgb(116, 109, 109);
+        font-size: 20px;  
+}
 
-    }
+.weather-forecast-temperatures-min{
+    opacity: 50%;
 
-    .metric{ opacity: 50%;
-
-
-    }
+}

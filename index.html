@@ -53,7 +53,7 @@
             
             
   <div class="overview">
-   
+      
     <ul  id="tempToday">
       <li id="city">
             
@@ -62,29 +62,42 @@
            <li id="description">
             
         </li>
-        
+
+         <div class="row">
+        <div class="col-6">
         <div class="clearfix weather-temperature">
           <img src=""  alt="Clear" 
           id="icon" class="float-left"/>
           <div class="float-left">
            <strong id="temperature">12</strong>
-           <span class="units"><a href="#" id ="celsius-link" class="active">°C</a>│<a href="#" id ="fahrenheit-link">°F</a></span>
+           <span class="units">°F</span>
         </div>
-      </div>
-    
-           <li>
-              Humidity: <span id="humidity"> </span>%
-        </li>
-        <li>
-              Wind: <span id="wind"> </span> km/h
-        </li>
-         <br />
-        <li> 
+           </div>   
+        </div>
+        <div class="col-6">
+            <ul>
+        
+                <li>
+                    Humidity: <span id="humidity"> </span>%
+                </li>
+                <li>
+                    Wind: <span id="wind"> </span> m/h
+                </li>
+                <br />
+                <br />
+                <br />
+                <li> 
           last updated: <span id="date"> </span>
             
         </li>
-    </ul>
-  
+        </ul>
+                
+            </div>
+          </div>
+          </ul>
+         
+        
+   
 
     
     </head>
@@ -92,63 +105,18 @@
     
     <section>
 <p>
-
-  <div class="container">
-  <div class="row align-items-start">
-    <div class="col">
-     <span class="day">Sunday</span> 
-     <br />
-     <br />
-     <br />
-      <div class="temp">61°</div>
-      <br />
-      <br />
-      <div class="metric">F</div>
+            
+           <div class="weather-forecast" id ="forecast">
+             <div class="row">
+                 <div class="col-2">
+                <div class="weather-forecast-date"> </div> 
+                <img src="http://openweathermap.org/img/wn/50d@2x.png" alt="" width="42"
+                />
+            <div class="weather-forecast-temperature"><span class="weather-forecast-temperatures-max">°</span>
+                <span class="weather-forecast-temperatures-min"> </span>
+            </div>
     </div>
-    <div class="col">
-     <span class="day">Monday</span> 
-     <br />
-     <br /> 
-     <br />
-      <div class="temp">52°</div>
-      <br />
-      <br />
-      <div class="metric">F</div>
-    </div>
-    <div class="col">
-      <span class="day">Tuesday</span>
-      <br />
-      <br />
-      <br />
-      <div class="temp">57°</div>
-      <br />
-      <br />
-      <div class="metric">F</div>
-    </div>
-    <div class="col">
-     <span class="day">Wednesday</span> 
-     <br />
-     <br />
-     <br />
-      <div class="temp">57°</div>
-      <br />
-      <br />
-      <div class="metric">F</div>
-    </div>
-    <div class="col">
-       <span class="day">Thursday</span> 
-       <br />
-       <br />
-       <br />
-       <div class="temp">66°</div>
-       <br />
-       <br />
-       <div class="metric">F</div>
-    </div>
-  </div>
-
-
-
+        </div>
 
 
 
